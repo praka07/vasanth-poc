@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>{{"# " + data.id}} </h1>
+<div mat-dialog-content>
+  <p>Please update the value</p>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="data.name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>
+      Description {{data.descrip}}</mat-label>
+    <input matInput [(ngModel)]="data.descrip">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick(data)">Cancel</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Update</button>
+</div>
