@@ -15,6 +15,7 @@ import { UpdateProduct } from './details/details.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     FormsModule,
     StoreModule.forRoot({ userName: DataReducer, userModel: userReducer}),
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule
   ],
   entryComponents: [UpdateProduct],
   providers: [],

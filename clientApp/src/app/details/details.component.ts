@@ -16,6 +16,7 @@ export class DetailsComponent implements OnInit {
 
   id: string;
   indiv: {
+    id: "",
     name: "",
     descrip: ""
   };
